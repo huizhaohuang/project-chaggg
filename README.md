@@ -16,7 +16,7 @@ We are using the City of Chicago's crime dataset, which provides comprehensive i
 
 The dataset is not stored in this repo. Download it before running any code.
 
-1. Download `dataset.csv` from [this link](https://drive.google.com/...)
+1. Download `dataset.csv` from [this link](https://drive.google.com/drive/folders/1Ro5IE1SdIQmwJOmQSjx8Rysdh_oac_AI?usp=share_link)
 2. Place it at `data/dataset.csv` in the project root
 
 ## Development Workflow
