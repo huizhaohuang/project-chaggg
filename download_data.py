@@ -7,8 +7,8 @@ os.makedirs("data/raw", exist_ok=True)
 os.makedirs("data/processed", exist_ok=True)
 
 # Raw data
-RAW_FILE_ID = "your_raw_file_id_here"
-RAW_OUTPUT = "data/raw/dataset.csv"
+RAW_FILE_ID = "1HGIQVus5LLVN8ONsKPhN6pX1ViHQdrdJ"
+RAW_OUTPUT = "data/chicago_crimes_2001_2025_raw.csv"
 
 if not os.path.exists(RAW_OUTPUT):
     print("Downloading raw dataset...")
@@ -19,7 +19,7 @@ else:
 
 # Processed data
 PROCESSED_FILE_ID = "your_processed_file_id_here"
-PROCESSED_OUTPUT = "data/processed/dataset.csv"
+PROCESSED_OUTPUT = "data/chicago_crimes_2001_2025_cleaned.csv"
 
 if not os.path.exists(PROCESSED_OUTPUT):
     print("Downloading processed dataset...")
