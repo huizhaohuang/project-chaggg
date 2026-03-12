@@ -1,4 +1,21 @@
-# this is how we cleaned the data
+# ==============================================================================
+# This is how we are cleaning the data 
+# ==============================================================================
+
+# ── Loading libraries ─────────────────────────────────────────────────────────
+import pandas as pd
+import os
+
+# ── Load data ─────────────────────────────────────────────────────────────────
+RAW_DATA_PATH = 'data/raw/chicago_crimes_2001_2025_raw.csv'
+
+if not os.path.exists(RAW_DATA_PATH):
+    print("Raw data not found. Please run download_data.py first.")
+    exit(1)
+
+print("Loading raw data...")
+df = pd.read_csv(RAW_DATA_PATH, low_memory=False)
+
 # ── Basic info ────────────────────────────────────────────────────────────────
 print(df.describe())
 print(df.shape)
