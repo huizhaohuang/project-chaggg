@@ -12,11 +12,11 @@ Usage:
 import os
 import sys
 
-# Import pipeline modules
-import scripts.fetch as fetch
-import scripts.clean as clean
-from scripts.utils import convert_to_parquet, get_data_info
-from scripts.config import RAW_CSV, CLEANED_CSV, CLEANED_PARQUET
+# Import pipeline modules (no 'scripts.' prefix since we're already in scripts/)
+import fetch
+import clean
+from utils import convert_to_parquet, get_data_info
+from config import RAW_CSV, CLEANED_CSV, CLEANED_PARQUET
 
 def run_pipeline(skip_download=False):
     """

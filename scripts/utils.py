@@ -7,7 +7,7 @@ Common usage:
 """
 import pandas as pd
 import os
-from scripts.config import *
+from config import *
 
 # ── Data Loading ──────────────────────────────────────────────────────────────
 def load_data(prefer_parquet=True):

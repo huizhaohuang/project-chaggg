@@ -9,7 +9,7 @@ Usage:
 """
 import pandas as pd
 import os
-from scripts.config import *
+from config import *
 
 # ── Loading ───────────────────────────────────────────────────────────────────
 def load_raw_data():
