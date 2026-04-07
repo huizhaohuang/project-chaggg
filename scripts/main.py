@@ -77,7 +77,7 @@ def run_pipeline(skip_download=False):
     get_data_info()
     print()
     print("Next steps:")
-    print("  - Import data in your analysis with: from scripts.utils import load_data")
+    print("  - Import data in your analysis with: from utils import load_data")
     print("  - Load the data with: df = load_data()")
     print()
 
