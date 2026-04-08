@@ -11,6 +11,17 @@ def create_app():
     app = Flask(__name__, template_folder="templates")
 
     crime_df = load_crime_data()
+
+    # Debug output
+    print(f"\n{'='*50}")
+    print(f"DATA LOADED: {len(crime_df)} rows, {len(crime_df.columns)} columns")
+    if len(crime_df) > 0:
+        print(f"Columns: {crime_df.columns.tolist()}")
+        print(f"Date range: {crime_df['date'].min()} to {crime_df['date'].max()}")
+    else:
+        print("WARNING: Empty DataFrame loaded!")
+    print(f"{'='*50}\n")
+
     app.config["CRIME_DF"] = crime_df
 
     @app.route("/")
