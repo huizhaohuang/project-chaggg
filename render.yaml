@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: chicago-crime-analysis
+    runtime: python
+    buildCommand: pip install -r requirements.txt && python download_data.py
+    startCommand: gunicorn run_app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
